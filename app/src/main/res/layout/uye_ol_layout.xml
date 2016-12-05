@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hqdefault"
+        android:layout_marginBottom="30dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:hint="@string/Email"
+            android:id="@+id/uyeEmail" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:id="@+id/uyeParola"
+            android:hint="@string/Parola" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="Üye Ol!"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFF"
+        android:id="@+id/yeniUyeButton"
+        android:background="@color/uyeButtonColor"/>
+
+
+    <Button
+        android:text="Zaten üye misin?"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:id="@+id/uyeGirisButton"
+        android:background="@null"
+        android:textColor="#FFFF"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>
